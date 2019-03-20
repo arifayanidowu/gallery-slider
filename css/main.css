@@ -1,0 +1,166 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald", Arial, sans-serif;
+  background: #333;
+  color: #fff;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+.slider {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+.slide.current .content {
+  opacity: 1;
+  -webkit-transform: translateX(600px);
+          transform: translateX(600px);
+  -webkit-transition: all 0.7s ease-in-out 0.3s;
+  transition: all 0.7s ease-in-out 0.3s;
+}
+
+@media (max-width: 812px) {
+  .slide.current .content {
+    -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
+  }
+}
+
+.slide .content {
+  position: absolute;
+  bottom: 70px;
+  left: -600px;
+  width: 600px;
+  background-color: rgba(225, 225, 225, 0.8);
+  color: #333;
+  padding: 3.5rem;
+  opacity: 0;
+}
+
+.slide .content > h1 {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 812px) {
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+    -webkit-transition: -webkit-transform 0.7s ease 0.3s;
+    transition: -webkit-transform 0.7s ease 0.3s;
+    transition: transform 0.7s ease 0.3s;
+    transition: transform 0.7s ease 0.3s, -webkit-transform 0.7s ease 0.3s;
+  }
+}
+
+.slide:first-child {
+  background: url(../img/1.jpg) no-repeat center center/cover;
+}
+
+.slide:nth-child(2) {
+  background: url(../img/2.jpg) no-repeat center center/cover;
+}
+
+.slide:nth-child(3) {
+  background: url(../img/3.jpg) no-repeat center center/cover;
+}
+
+.slide:nth-child(4) {
+  background: url(../img/4.jpg) no-repeat center center/cover;
+}
+
+.slide:nth-child(5) {
+  background: url(../img/5.jpg) no-repeat center center/cover;
+}
+
+.slide:nth-child(6) {
+  background: url(../img/6.jpg) no-repeat center center/cover;
+}
+
+button#prev,
+button#next {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  padding: 1.3rem 1.5rem;
+  border-radius: 50%;
+  outline: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+button#prev i,
+button#next i {
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  outline: none;
+}
+
+button#prev:hover,
+button#next:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+button#next {
+  right: 1.5rem;
+}
+
+button#next:hover i {
+  -webkit-transform: translateX(0.2rem);
+          transform: translateX(0.2rem);
+}
+
+button#prev {
+  left: 1.5rem;
+}
+
+button#prev:hover i {
+  -webkit-transform: translateX(-0.2rem);
+          transform: translateX(-0.2rem);
+}
+/*# sourceMappingURL=main.css.map */
