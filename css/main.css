@@ -13,7 +13,7 @@ html {
           box-sizing: border-box;
 }
 
-@media (max-width: 120rem) {
+@media (max-width: 120em) {
   html {
     font-size: 50%;
   }
@@ -64,7 +64,7 @@ p {
   transition: all 0.7s ease-in-out 0.3s;
 }
 
-@media (max-width: 70rem) {
+@media (max-width: 80em) {
   .slide.current .content {
     -webkit-transform: translateY(-30rem);
             transform: translateY(-30rem);
@@ -86,7 +86,7 @@ p {
   margin-bottom: 1rem;
 }
 
-@media (max-width: 70rem) {
+@media (max-width: 80em) {
   .slide .content {
     bottom: -30rem;
     left: 0;
@@ -95,6 +95,7 @@ p {
     transition: -webkit-transform 0.7s ease 0.3s;
     transition: transform 0.7s ease 0.3s;
     transition: transform 0.7s ease 0.3s, -webkit-transform 0.7s ease 0.3s;
+    padding: 2rem;
   }
 }
 

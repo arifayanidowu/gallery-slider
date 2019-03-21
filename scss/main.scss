@@ -1,9 +1,9 @@
 @import "mixin";
 
 $var: (
-  mobile: 70rem,
-  desktop: 120rem,
-  large-screen: 190rem
+  mobile: 80em,
+  desktop: 120em,
+  large-screen: 190em
 );
 
 $md: map-get($var, mobile);
@@ -87,6 +87,7 @@ p {
       left: 0;
       width: 100%;
       transition: transform 0.7s ease 0.3s;
+      padding: 2rem;
     }
   }
 
