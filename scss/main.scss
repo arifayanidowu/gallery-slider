@@ -35,13 +35,13 @@ body {
 
 h1 {
   font-size: 2.5rem;
-  @include responsiv-mobile($md) {
+  @include responsiv-mobile($lg) {
     font-size: 2rem;
   }
 }
 p {
   font-size: 1.4rem;
-  @include responsiv-mobile($md) {
+  @include responsiv-mobile($lg) {
     font-size: 1.2rem;
   }
 }
