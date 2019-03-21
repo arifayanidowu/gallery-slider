@@ -21,6 +21,9 @@ $xl: map-get($var, large-screen);
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  @include responsiv-mobile($md){
+    font-size: 50%;
+  }
 }
 
 body {
