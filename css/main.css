@@ -13,7 +13,7 @@ html {
           box-sizing: border-box;
 }
 
-@media (max-width: 70rem) {
+@media (max-width: 120rem) {
   html {
     font-size: 50%;
   }
