@@ -21,7 +21,7 @@ $xl: map-get($var, large-screen);
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-  @include responsiv-mobile($lg) {
+  @include responsiv-mobile($md) {
     font-size: 50%;
   }
 }
@@ -35,9 +35,15 @@ body {
 
 h1 {
   font-size: 2.5rem;
+  @include responsiv-mobile($md) {
+    font-size: 2rem;
+  }
 }
 p {
   font-size: 1.4rem;
+  @include responsiv-mobile($md) {
+    font-size: 1.2rem;
+  }
 }
 
 .slider {

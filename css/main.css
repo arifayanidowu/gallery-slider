@@ -13,7 +13,7 @@ html {
           box-sizing: border-box;
 }
 
-@media (max-width: 120em) {
+@media (max-width: 80em) {
   html {
     font-size: 50%;
   }
@@ -30,8 +30,20 @@ h1 {
   font-size: 2.5rem;
 }
 
+@media (max-width: 80em) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
 p {
   font-size: 1.4rem;
+}
+
+@media (max-width: 80em) {
+  p {
+    font-size: 1.2rem;
+  }
 }
 
 .slider {
