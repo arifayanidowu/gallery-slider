@@ -58,24 +58,24 @@ p {
 
 .slide.current .content {
   opacity: 1;
-  -webkit-transform: translateX(600px);
-          transform: translateX(600px);
+  -webkit-transform: translateX(60rem);
+          transform: translateX(60rem);
   -webkit-transition: all 0.7s ease-in-out 0.3s;
   transition: all 0.7s ease-in-out 0.3s;
 }
 
 @media (max-width: 812px) {
   .slide.current .content {
-    -webkit-transform: translateY(-300px);
-            transform: translateY(-300px);
+    -webkit-transform: translateY(-30rem);
+            transform: translateY(-30rem);
   }
 }
 
 .slide .content {
   position: absolute;
-  bottom: 70px;
-  left: -600px;
-  width: 600px;
+  bottom: 7rem;
+  left: -60rem;
+  width: 60rem;
   background-color: rgba(225, 225, 225, 0.8);
   color: #333;
   padding: 3.5rem;
@@ -88,7 +88,7 @@ p {
 
 @media (max-width: 812px) {
   .slide .content {
-    bottom: -300px;
+    bottom: -30rem;
     left: 0;
     width: 100%;
     -webkit-transition: -webkit-transform 0.7s ease 0.3s;
